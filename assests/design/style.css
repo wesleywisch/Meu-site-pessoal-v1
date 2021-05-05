@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*header*/
+
+header{
+    background: #00D2FC;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+}
+
+header h1{
+    color: white;
+    margin-left: 3%;
+    padding: 10px 0;
+}
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul li{
+    list-style: none;
+    margin-left: 10px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    padding: 12px;
+    transition: all 250ms linear 0s;
+    border-radius: 20px;
+}
+
+header nav ul li a:hover{
+    background-color: #009EFA;
+}
+
+/*Media queres*/
+
+@media screen and (max-width: 540px){
+    nav{
+        display: none;
+    }
+
+    .um,
+    .dois,
+    .tres{
+        background: #ffffff;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+        transition-duration: 0.3s;
+    }
+
+    .menu-toggle{
+        width: 40px;
+        height: 30px;
+        margin-right: 30px;
+    }
+
+    .menu-section.on{
+        position: absolute;
+        top: 58px;
+        right: 0;
+        width: 60%;
+        height: 80%;
+        background-color:rgba(0, 0, 0, 0.767);
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0px 0px 0px 30px;
+    }
+
+    .menu-section.on nav{
+        display: block;
+    }
+
+    .menu-section.on .menu-toggle{
+        position: absolute;
+        right: 0px;
+        top: -50px;
+    }
+
+    .menu-section.on .menu-toggle .um{
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    .menu-section.on .menu-toggle .dois{
+        opacity: 0;
+    }
+
+    .menu-section.on .menu-toggle .tres{
+        transform: rotate(-45deg) translate(8px, -9px);
+    }
+
+    .menu-section.on nav ul{
+        text-align: center;
+        display: block;
+    }
+
+    .menu-section.on nav ul li a{
+        transition-duration: 0.5s;
+        font-size: 2em;
+        display: block;
+    }
+}
