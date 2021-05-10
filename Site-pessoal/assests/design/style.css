@@ -61,6 +61,7 @@ header nav ul li a:hover{
 }
 
 .bg-fundo h2{
+    width: 100%;
     position: absolute;
     color: #ffffff;
     top: 50%;
@@ -70,7 +71,79 @@ header nav ul li a:hover{
     transform: translate(-50%, -50%);
 }
 
+/*Galeria de projetos*/
+
+.estrutura-galeria p{
+    text-align: center;
+    font-size: 2em;
+}
+
+/*footer*/
+
+footer{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: turquoise;
+    align-items: center;
+}
+
+footer .container1{
+    width: 100%;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+footer img{
+    width: 40px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+footer p{
+    display: inline-block;
+    transform: translateY(-60%);
+}
+
+/*copyright*/
+
+.copyright{
+    text-align: center;
+    width: 100%;
+    background-color: teal;
+    font-size: 1.1em;
+    color: white;
+}
+
 /*Media queres*/
+
+/*footer*/
+
+@media screen and (max-width: 900px){
+    footer{
+        height: 200px;
+    }
+
+    footer a{
+        display: block;
+        margin-top: 15px;
+    }
+}
+
+
+
+/* bg-imagem*/
+
+@media screen and (max-width: 600px){
+    .bg-fundo h2{
+        font-size: 2em;
+    }
+}
 
 @media screen and (max-width: 540px){
     nav{
@@ -138,5 +211,22 @@ header nav ul li a:hover{
         transition-duration: 0.5s;
         font-size: 2em;
         display: block;
+    }
+}
+
+@media screen and (max-width: 460px){
+    .bg-fundo h2{
+        font-size: 1.3em;
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 310px){
+    footer{
+        height: 350px;
+    }
+
+    footer p{
+        margin-top: 15px;
     }
 }
