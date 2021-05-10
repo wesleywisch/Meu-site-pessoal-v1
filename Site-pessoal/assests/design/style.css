@@ -47,6 +47,29 @@ header nav ul li a:hover{
     background-color: #009EFA;
 }
 
+/*bg-imagem*/
+
+.bg-fundo{
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+
+.bg-fundo img{
+    width: 100%;
+    height: 100%;
+}
+
+.bg-fundo h2{
+    position: absolute;
+    color: #ffffff;
+    top: 50%;
+    margin-left: 50%;
+    font-size: 2.4em;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
 /*Media queres*/
 
 @media screen and (max-width: 540px){
