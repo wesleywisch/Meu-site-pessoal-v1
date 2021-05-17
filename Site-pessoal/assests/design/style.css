@@ -12,7 +12,7 @@ body{
 /*header*/
 
 header{
-    background: rgb(13, 17, 23);
+    background: rgb(32, 32, 36);
 }
 
 header .container{
@@ -49,7 +49,7 @@ header nav ul li a{
 }
 
 header nav ul li a:hover{
-    background-color: rgba(36, 47, 65, 0.603);
+    background-color: rgb(36, 47, 65);
 }
 
 /*bg-imagem*/
@@ -112,12 +112,141 @@ header nav ul li a:hover{
     grid-area: "cartao";
 }
 
+/*Techs*/
+
+.stackTech{
+    display: grid;
+    grid-template-columns: "h2 h2 h2 h2"
+                         "front front front front"
+                         "techFront techFront techFront techFront"
+                         "back back back back"
+                         "techBack techBack techBack techBack";
+}
+
+    /*Techs Front*/
+
+.Pilha{
+    display: flex;
+    justify-content: center;
+    font-size: 2.4em;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* background-color: rgb(13, 17, 23); */
+    grid-column: "h2";
+}
+
+.front{
+    display: flex;
+    justify-content: center;
+    font-size: 2.4em;
+    color: white;
+    grid-column: "front";
+}
+
+.techFront{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    grid-column: "techFront";
+}
+
+.techFront img{
+    width: 60px;
+}
+
+.html{
+    text-align: center;
+    background-color: #202024;
+    padding: 15px;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+
+.html p{
+    color: rgba(255, 255, 255, 0.699);
+}
+
+.css{
+    text-align: center;
+    background-color: #202024;
+    padding: 15px;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+
+.css p{
+    color: rgba(255, 255, 255, 0.699);
+}
+
+.javascript{
+    text-align: center;
+    background-color: #202024;
+    padding: 15px;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+
+.javascript p{
+    color: rgba(255, 255, 255, 0.699);
+}
+
+.bootstrap{
+    text-align: center;
+    background-color: #202024;
+    padding: 15px;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+
+.bootstrap p{
+    color: rgba(255, 255, 255, 0.699);
+}
+
+    /*Stack backend*/
+
+.back{
+    display: flex;
+    justify-content: center;
+    font-size: 2.4em;
+    color: white;
+    grid-column: "back";
+}
+
+.techBack img{
+    width: 60px;
+}
+
+.techBack{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    grid-column: "techBack";
+}
+
+.node{
+    text-align: center;
+    background-color: #202024;
+    padding: 15px;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+
+.node p{
+    color: rgba(255, 255, 255, 0.699);
+}
+
+    /*Stack Outros*/
+
+
 /*footer*/
 
 footer{
     display: flex;
     width: 100%;
-    height: 220px;
+    height: 300px;
     background: rgb(13, 17, 23);
     align-items: center;
 }
@@ -132,11 +261,16 @@ footer h2{
     margin-bottom: 20px;
     color: #fff;
     font-size: 2.4em;
+    background-color: rgb(13, 17, 23);
 }
 
 footer a{
     text-decoration: none;
     color: white;
+}
+
+footer .stacks2{
+    margin-top: 20px;
 }
 
 footer svg{
@@ -208,8 +342,6 @@ footer .github:hover{
 
 /*whatsapp*/
 
-
-
 .whats{
     position: fixed;
     width: 300px;
@@ -264,36 +396,35 @@ footer .github:hover{
     }
 }
 
+@media screen and (max-width: 750px){
+    .stackFront{
+        display: inline-block;
+    }
+    
+    .stackFront img{
+        width: 50px;
+    }
+}
+
 @media screen and (max-width: 600px){
     .bg-fundo h2{
         font-size: 2em;
     }
 
     footer{
-        height: 500px;
+        height: 450px;
     }
 
-    footer svg{
-        display: block;
-        margin-top: 20px;
-        margin-left: 50%;
-        transform: translateX(-50%);
+    footer .stack2{
+        display: flex;
+        margin-top: 25px;
+        justify-content: center;
     }
-
-    footer .linkedin:hover{
-        transform: translateX(-50%);
-    }
-
-    footer .outlook:hover{
-        transform: translateX(-50%);
-    }
-
-    footer .insta:hover{
-        transform: translateX(-50%);
-    }
-
-    footer .github:hover{
-        transform: translateX(-50%);
+    
+    footer .stacks2{
+        display: flex;
+        margin-top: 10px;
+        justify-content: center;
     }
 }
 
@@ -370,6 +501,7 @@ footer .github:hover{
     .bg-fundo h2{
         font-size: 1.3em;
         max-width: 300px;
+        color: #000;
     }
     .estrutura-galeria .cartao{
         max-width: 300px;
