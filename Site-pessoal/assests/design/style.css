@@ -252,9 +252,6 @@ footer .github:hover{
             grid-template-areas:  "cartao cartao"
                                   "cartao cartao";
     }
-    .cartao{
-        
-    }
 }
 
 @media screen and (max-width: 900px){
