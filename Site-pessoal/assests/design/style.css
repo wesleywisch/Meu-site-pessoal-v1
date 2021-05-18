@@ -58,11 +58,11 @@ header nav ul li a:hover{
     width: 100%;
     height: 700px;
     position: relative;
-    margin-left: 50%;
-    transform: translateX(-50%);
+    background-color: #010f1c;
 }
 
 .bg-fundo img{
+    max-width: 2000px;
     width: 100%;
     height: 100%;
 }
@@ -70,12 +70,13 @@ header nav ul li a:hover{
 .bg-fundo h2{
     width: 100%;
     position: absolute;
-    color: rgba(0, 0, 0, 0.836);
+    color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     top: 50%;
     margin-left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 2.4em;
     text-align: center;
-    transform: translate(-50%, -50%);
 }
 
 /*Galeria de projetos*/
@@ -120,7 +121,9 @@ header nav ul li a:hover{
                          "front front front front"
                          "techFront techFront techFront techFront"
                          "back back back back"
-                         "techBack techBack techBack techBack";
+                         "techBack techBack techBack techBack"
+                         "outros outros outros outros"
+                         "teckOutros teckOutros teckOutros teckOutros";
 }
 
     /*Techs Front*/
@@ -133,7 +136,7 @@ header nav ul li a:hover{
     margin-top: 20px;
     margin-bottom: 20px;
     /* background-color: rgb(13, 17, 23); */
-    grid-column: "h2";
+    grid-area: "h2";
 }
 
 .front{
@@ -141,7 +144,7 @@ header nav ul li a:hover{
     justify-content: center;
     font-size: 2.4em;
     color: white;
-    grid-column: "front";
+    grid-area: "front";
 }
 
 .techFront{
@@ -149,7 +152,7 @@ header nav ul li a:hover{
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 20px;
-    grid-column: "techFront";
+    grid-area: "techFront";
 }
 
 .techFront img{
@@ -211,7 +214,7 @@ header nav ul li a:hover{
     justify-content: center;
     font-size: 2.4em;
     color: white;
-    grid-column: "back";
+    grid-area: "back";
 }
 
 .techBack img{
@@ -223,7 +226,7 @@ header nav ul li a:hover{
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 20px;
-    grid-column: "techBack";
+    grid-area: "techBack";
 }
 
 .node{
@@ -239,6 +242,52 @@ header nav ul li a:hover{
 }
 
     /*Stack Outros*/
+
+.outros{
+    display: flex;
+    justify-content: center;
+    font-size: 2.4em;
+    color: white;
+    grid-area: "outros";
+}
+
+.teckOutros img{
+    width: 60px;
+}
+
+.teckOutros{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    grid-area: "teckOutros";
+}
+
+.git{
+    text-align: center;
+    background-color: #202024;
+    padding: 15px;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+
+.git p{
+    color: rgba(255, 255, 255, 0.699);
+}
+
+.github{
+    text-align: center;
+    background-color: #202024;
+    padding: 15px;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+
+.github p{
+    color: rgba(255, 255, 255, 0.699);
+}
+
+
 
 
 /*footer*/
@@ -344,8 +393,8 @@ footer .github:hover{
 
 .whats{
     position: fixed;
-    width: 300px;
-    height: 100px;
+    width: 260px;
+    height: 80px;
     background-color: #4dcc5b;
     bottom: 25px;
     right: -350px;
@@ -360,7 +409,7 @@ footer .github:hover{
 
 .whats-image svg{
     position: fixed;
-    width: 80px;
+    width: 60px;
     bottom: 35px;
     right: 15px;
     cursor: pointer;
@@ -369,7 +418,7 @@ footer .github:hover{
 
 .whats-tel{
     position: absolute;
-    margin-top: 13%;
+    margin-top: 11%;
     margin-left: 5%;
     font-size: 1.3em;
     color: #fff;
@@ -408,7 +457,7 @@ footer .github:hover{
 
 @media screen and (max-width: 600px){
     .bg-fundo h2{
-        font-size: 2em;
+        font-size: 1.3em;
     }
 
     footer{
@@ -495,6 +544,25 @@ footer .github:hover{
         font-size: 2em;
         display: block;
     }
+
+    .techFront{
+        display: block;
+        width: 120px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .css{
+        margin-top: 10px;
+    }
+
+    .javascript{
+        margin-top: 10px;
+    }
+
+    .bootstrap{
+        margin-top: 10px;
+    }
 }
 
 @media screen and (max-width: 460px){
@@ -505,6 +573,10 @@ footer .github:hover{
     }
     .estrutura-galeria .cartao{
         max-width: 300px;
+    }
+
+    .Pilha, .front, .back, .outros{
+        font-size: 1.8em;
     }
 }
 
