@@ -1,3 +1,20 @@
 :root{
     --bg-color: rgb(13, 17, 23);
+    --white: rgba(255, 255, 255, 0.9);
+    --blue-gradiente: rgba(0,61,106,1);
+    --white-background: #ffffffa6;
+    --fullWhite: #fff;
+    --techWhite: rgba(255, 255, 255, 0.699);
+    --tech-bg: #202024;
+}
+
+
+.dark-mode:root{
+    --bg-color: rgb(13, 17, 23);
+    --white: rgba(255, 255, 255, 0.9);
+    --blue-gradiente: rgba(0,61,106,1);
+    --white-background: #ffffffa6;
+    --fullWhite: #fff;
+    --techWhite: rgba(255, 255, 255, 0.699);
+    --tech-bg: #202024;
 }

@@ -1,22 +1,15 @@
 
 /*Media queres*/
 
-@media screen and (max-width: 1800px){
-    .estrutura-galeria{
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-            grid-template-areas:  "cartao cartao"
-                                  "cartao cartao";
+@media screen and (max-width: 1250px){
+    .SobreMim{
+        max-width: 700px;
     }
 }
 
-@media screen and (max-width: 900px){
-    .estrutura-galeria{
-        grid-template-columns: 1fr;
-        grid-template-areas:  "cartao"
-                                "cartao"
-                                "cartao"
-                                "cartao";
+@media screen and (max-width: 750px){
+    .SobreMim{
+        max-width: 550px;
     }
 }
 
@@ -49,6 +42,14 @@
         display: flex;
         margin-top: 10px;
         justify-content: center;
+    }
+
+    .SobreMim{
+        max-width: 450px;
+    }
+
+    .p1, .p2{
+        font-size: 1.2em;
     }
 }
 
@@ -140,18 +141,44 @@
     }
 }
 
+@media screen and (max-width: 500px){
+    .SobreMim{
+        max-width: 350px;
+    }
+}
+
 @media screen and (max-width: 460px){
     .bg-fundo h2{
         font-size: 1.3em;
-        max-width: 300px;
-        color: #000;
-    }
-    .estrutura-galeria .cartao{
         max-width: 300px;
     }
 
     .Pilha, .front, .back, .outros{
         font-size: 1.8em;
+    }
+}
+
+@media screen and (max-width: 410px){
+    .SobreMim{
+        max-width: 310px;
+    }
+
+    .SobreMim h2{
+        font-size: 1.3em;
+    }
+
+    .sobre h3{
+        font-size: 1.1em;
+    }
+
+    .p1, .p2{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .SobreMim{
+        max-width: 280px;
     }
 }
 

@@ -12,7 +12,7 @@ body{
 /*header*/
 
 header{
-    background: rgb(32, 32, 36);
+    background: #1C1C1C;
 }
 
 header .container{
@@ -25,7 +25,7 @@ header .container{
 }
 
 header h1{
-    color: white;
+    color: var(--white);
     margin-left: 3%;
     padding: 10px 0;
 }
@@ -41,7 +41,7 @@ header nav ul li{
 
 header nav ul li a{
     text-decoration: none;
-    color: white;
+    color: var(--white);
     font-size: 1em;
     padding: 12px;
     transition: all 250ms linear 0s;
@@ -49,7 +49,8 @@ header nav ul li a{
 }
 
 header nav ul li a:hover{
-    background-color: rgb(36, 47, 65);
+    color: white;
+    background-color: rgb(0, 93, 241);
 }
 
 /*bg-imagem*/
@@ -58,19 +59,14 @@ header nav ul li a:hover{
     width: 100%;
     height: 700px;
     position: relative;
-    background-color: #010f1c;
-}
-
-.bg-fundo img{
-    max-width: 2000px;
-    width: 100%;
-    height: 100%;
+    background: var(--bg-color);
+    background: linear-gradient(180deg, var(--bg-color) 0%, var(--bg-color) 35%, var(--blue-gradiente) 100%);
 }
 
 .bg-fundo h2{
     width: 100%;
     position: absolute;
-    color: #000000;
+    color: var(--white-background);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     top: 50%;
     margin-left: 50%;
@@ -79,38 +75,53 @@ header nav ul li a:hover{
     text-align: center;
 }
 
-/*Galeria de projetos*/
+/*Sobre mim*/
 
-.h2 h2{
+.SobreMim{
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 20px;
+}
+
+.SobreMim h2{
+    color: var(--fullWhite);
     font-size: 2.4em;
     text-align: center;
-    margin-top: 4%;
-    color: #fff;
-    background-color: rgb(13, 17, 23);
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.SobreMim img{
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 2%;
+}
+
+.sobre h3{
+    color: var(--fullWhite);
+    font-size: 2em;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.sobre span{
+    color: rgb(13, 238, 238);
+}
+
+.p1, .p2{
+    color: rgba(245, 245, 245, 0.788);
+    font-size: 1.5em;
+    margin-bottom: 25px;
+    background-color: #000;
     padding: 30px;
-    margin-top: 0;
-}
-
-.estrutura-galeria{
-    max-width: 2000px;
-    padding: 20px 0 20px 0;
-    gap: 20px;
-    display: grid;
-    margin: 0 auto;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "cartao cartao cartao cartao";
-    background-color: rgb(13, 17, 23);
-}
-
-.estrutura-galeria .cartao{
-    margin: 0 auto;
-    display: flex;
-    max-width: 400px;
-    width: 100%;
-    height: 300px;
-    background: #ecf0f3;
-    border-radius: 35px;
-    grid-area: "cartao";
+    border-radius: 25px;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 10px 2px rgba(255,255,255,0.7); 
+    box-shadow: 0px 10px 13px -7px #000000, 0px 0px 10px 2px rgba(255,255,255,0.7);
 }
 
 /*Techs*/
@@ -132,10 +143,9 @@ header nav ul li a:hover{
     display: flex;
     justify-content: center;
     font-size: 2.4em;
-    color: white;
+    color: var(--fullWhite);
     margin-top: 20px;
     margin-bottom: 20px;
-    /* background-color: rgb(13, 17, 23); */
     grid-area: "h2";
 }
 
@@ -143,7 +153,7 @@ header nav ul li a:hover{
     display: flex;
     justify-content: center;
     font-size: 2.4em;
-    color: white;
+    color: var(--fullWhite);
     grid-area: "front";
 }
 
@@ -161,50 +171,50 @@ header nav ul li a:hover{
 
 .html{
     text-align: center;
-    background-color: #202024;
+    background-color: var(--tech-bg);
     padding: 15px;
     border-radius: 10px;
     margin-left: 15px;
 }
 
 .html p{
-    color: rgba(255, 255, 255, 0.699);
+    color: var(--techWhite);
 }
 
 .css{
     text-align: center;
-    background-color: #202024;
+    background-color: var(--tech-bg);
     padding: 15px;
     border-radius: 10px;
     margin-left: 15px;
 }
 
 .css p{
-    color: rgba(255, 255, 255, 0.699);
+    color: var(--techWhite);
 }
 
 .javascript{
     text-align: center;
-    background-color: #202024;
+    background-color: var(--tech-bg);
     padding: 15px;
     border-radius: 10px;
     margin-left: 15px;
 }
 
 .javascript p{
-    color: rgba(255, 255, 255, 0.699);
+    color: var(--techWhite);
 }
 
 .bootstrap{
     text-align: center;
-    background-color: #202024;
+    background-color: var(--tech-bg);
     padding: 15px;
     border-radius: 10px;
     margin-left: 15px;
 }
 
 .bootstrap p{
-    color: rgba(255, 255, 255, 0.699);
+    color: var(--techWhite);
 }
 
     /*Stack backend*/
@@ -213,7 +223,7 @@ header nav ul li a:hover{
     display: flex;
     justify-content: center;
     font-size: 2.4em;
-    color: white;
+    color: var(--fullWhite);
     grid-area: "back";
 }
 
@@ -231,14 +241,14 @@ header nav ul li a:hover{
 
 .node{
     text-align: center;
-    background-color: #202024;
+    background-color: var(--tech-bg);
     padding: 15px;
     border-radius: 10px;
     margin-left: 15px;
 }
 
 .node p{
-    color: rgba(255, 255, 255, 0.699);
+    color: var(--techWhite);
 }
 
     /*Stack Outros*/
@@ -247,7 +257,7 @@ header nav ul li a:hover{
     display: flex;
     justify-content: center;
     font-size: 2.4em;
-    color: white;
+    color: var(--fullWhite);
     grid-area: "outros";
 }
 
@@ -265,26 +275,26 @@ header nav ul li a:hover{
 
 .git{
     text-align: center;
-    background-color: #202024;
+    background-color: var(--tech-bg);
     padding: 15px;
     border-radius: 10px;
     margin-left: 15px;
 }
 
 .git p{
-    color: rgba(255, 255, 255, 0.699);
+    color: var(--techWhite);
 }
 
 .github{
     text-align: center;
-    background-color: #202024;
+    background-color: var(--tech-bg);
     padding: 15px;
     border-radius: 10px;
     margin-left: 15px;
 }
 
 .github p{
-    color: rgba(255, 255, 255, 0.699);
+    color: var(--techWhite);
 }
 
 
@@ -310,12 +320,12 @@ footer h2{
     margin-bottom: 20px;
     color: #fff;
     font-size: 2.4em;
-    background-color: rgb(13, 17, 23);
+    background-color: var(--bg-color);
 }
 
 footer a{
     text-decoration: none;
-    color: white;
+    color: var(--fullWhite);
 }
 
 footer .stacks2{
@@ -384,9 +394,9 @@ footer .github:hover{
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: rgb(13, 17, 23);
+    background-color: var(--bg-color);
     font-size: 1.1em;
-    color: white;
+    color: var(--fullWhite);
 }
 
 /*whatsapp*/
@@ -401,6 +411,9 @@ footer .github:hover{
     border-radius: 50px;
     overflow: hidden;
     transition: all 0.8s ease;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
 }
 
 .whats:hover{
@@ -421,5 +434,5 @@ footer .github:hover{
     margin-top: 11%;
     margin-left: 5%;
     font-size: 1.3em;
-    color: #fff;
+    color: var(--fullWhite);
 }
