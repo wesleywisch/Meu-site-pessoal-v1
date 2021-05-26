@@ -407,8 +407,8 @@ footer .github:hover{
     right: -350px;
     border-radius: 50px;
     overflow: hidden;
-    transition: color 0.8s ease;
-    -webkit-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+    -webkit-transition: 0.8s ease;
     -moz-transition: all 0.8s ease;
     -o-transition: all 0.8s ease;
 }
