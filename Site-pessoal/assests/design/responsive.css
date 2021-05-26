@@ -1,0 +1,166 @@
+
+/*Media queres*/
+
+@media screen and (max-width: 1800px){
+    .estrutura-galeria{
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:  "cartao cartao"
+                                  "cartao cartao";
+    }
+}
+
+@media screen and (max-width: 900px){
+    .estrutura-galeria{
+        grid-template-columns: 1fr;
+        grid-template-areas:  "cartao"
+                                "cartao"
+                                "cartao"
+                                "cartao";
+    }
+}
+
+@media screen and (max-width: 750px){
+    .stackFront{
+        display: inline-block;
+    }
+    
+    .stackFront img{
+        width: 50px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .bg-fundo h2{
+        font-size: 1.3em;
+    }
+
+    footer{
+        height: 450px;
+    }
+
+    footer .stack2{
+        display: flex;
+        margin-top: 25px;
+        justify-content: center;
+    }
+    
+    footer .stacks2{
+        display: flex;
+        margin-top: 10px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 540px){
+    nav{
+        display: none;
+    }
+
+    .um,
+    .dois,
+    .tres{
+        background: #ffffff;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+        transition-duration: 0.3s;
+    }
+
+    .menu-toggle{
+        width: 40px;
+        height: 30px;
+        margin-right: 30px;
+    }
+
+    .menu-section.on{
+        position: absolute;
+        top: 58px;
+        right: 0;
+        width: 60%;
+        height: 20%;
+        background-color:rgba(0, 0, 0, 0.767);
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0px 0px 0px 30px;
+    }
+
+    .menu-section.on nav{
+        display: block;
+    }
+
+    .menu-section.on .menu-toggle{
+        position: absolute;
+        right: 0px;
+        top: -50px;
+    }
+
+    .menu-section.on .menu-toggle .um{
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    .menu-section.on .menu-toggle .dois{
+        opacity: 0;
+    }
+
+    .menu-section.on .menu-toggle .tres{
+        transform: rotate(-45deg) translate(8px, -9px);
+    }
+
+    .menu-section.on nav ul{
+        text-align: center;
+        display: block;
+    }
+
+    .menu-section.on nav ul li a{
+        transition-duration: 0.5s;
+        font-size: 2em;
+        display: block;
+    }
+
+    .techFront{
+        display: block;
+        width: 120px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .css{
+        margin-top: 10px;
+    }
+
+    .javascript{
+        margin-top: 10px;
+    }
+
+    .bootstrap{
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 460px){
+    .bg-fundo h2{
+        font-size: 1.3em;
+        max-width: 300px;
+        color: #000;
+    }
+    .estrutura-galeria .cartao{
+        max-width: 300px;
+    }
+
+    .Pilha, .front, .back, .outros{
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (max-width: 310px){
+    footer{
+        height: 350px;
+    }
+
+    footer p{
+        margin-top: 15px;
+    }
+}
