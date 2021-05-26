@@ -61,6 +61,8 @@ header nav ul li a:hover{
     position: relative;
     background: var(--bg-color);
     background: linear-gradient(180deg, var(--bg-color) 0%, var(--bg-color) 35%, var(--blue-gradiente) 100%);
+    -webkit-background: linear-gradient(180deg, var(--bg-color) 0%, var(--bg-color) 35%, var(--blue-gradiente) 100%);
+    -o-background: linear-gradient(180deg, var(--bg-color) 0%, var(--bg-color) 35%, var(--blue-gradiente) 100%);
 }
 
 .bg-fundo h2{
