@@ -409,10 +409,19 @@ footer .github:hover{
     right: -350px;
     border-radius: 50px;
     overflow: hidden;
-    transition: all 0.8s ease;
+    transition: 0.8s ease;
     -webkit-transition: 0.8s ease;
     -moz-transition: all 0.8s ease;
     -o-transition: all 0.8s ease;
+}
+
+/*se o transition nao der tentar essa do media*/
+
+@media not all and (min-resolution: .001dpcm){
+    .whats{
+        transition: 0.8s ease;
+        -webkit-transition: 0.8s ease;
+    }
 }
 
 .whats:hover{
