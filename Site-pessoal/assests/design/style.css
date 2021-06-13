@@ -219,6 +219,18 @@ header nav ul li a:hover{
     color: var(--techWhite);
 }
 
+.react{
+    text-align: center;
+    background-color: var(--tech-bg);
+    padding: 15px;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+
+.react p{
+    color: var(--techWhite);
+}
+
     /*Stack backend*/
 
 .back{
@@ -250,6 +262,18 @@ header nav ul li a:hover{
 }
 
 .node p{
+    color: var(--techWhite);
+}
+
+.mongo{
+    text-align: center;
+    background-color: var(--tech-bg);
+    padding: 15px;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+
+.mongo p{
     color: var(--techWhite);
 }
 
@@ -420,7 +444,7 @@ footer .github:hover{
 @media not all and (min-resolution: .001dpcm){
     .whats{
         transition: 0.8s ease;
-        -webkit-transition: 0.8s ease;
+        -webkit-transition: 190ms width linear;
     }
 }
 
